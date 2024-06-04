@@ -43,11 +43,12 @@ public class Funcionario {
 		salary += salary * ( percentage / 100);
 	}
 	
+	@Override
 	public String toString() {
 		return  this.id 
 				+ ", " 
 				+this.name
 				+", "
-				+this.salary;
+				+ String.format("%.2f", salary);
 	}
 }
